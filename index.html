@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Verilogsimulation : Verilog仿真工具" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Verilogsimulation</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/wyh267/verilogSimulation">View on GitHub</a>
+
+          <h1 id="project_title">Verilogsimulation</h1>
+          <h2 id="project_tagline">Verilog仿真工具</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/wyh267/verilogSimulation/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/wyh267/verilogSimulation/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>本软件不是仿真verilog程序的，是verilog之前的c语言仿真使用的，在c语言做verilog仿真时对于每个时钟周期上数据的具体值很难通过printf来观察，本软件提供一种可视化的管理变量的方法，将需要监控的变量进行一些配置即可实时观察该变量在任意时刻是什么值，方便进行AISC设计是的算法实现。</p>
+
+<p>使用方法：
+1.将自己的程序源【C语言实现的算法代码】代码拷贝到工程目录下</p>
+
+<p>2.右键点工程---&gt;添加---&gt;现有项,将刚刚拷贝的cpp和h文件添加到工程</p>
+
+<p>3.修改main函数的名称</p>
+
+<p>4.将所有cpp和h文件添加#include "stdafx.h"</p>
+
+<p>5.编译运行无错误。</p>
+
+<p>6.配置变量，入口文件是：AISCTest.cpp中的void AISCTest()，在此函数中配置变量和变量信息，配置具体函数在simluationSDK.h中</p>
+
+<p>7.配置程序入口，入口文件是：AISCTest.cpp中的void func()，在这里调用你们的main函数，请将main函数改名</p>
+
+<p>8.再次编译运行，无错误。</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Verilogsimulation maintained by <a href="https://github.com/wyh267">wyh267</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("c c++ verilog simulation");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
